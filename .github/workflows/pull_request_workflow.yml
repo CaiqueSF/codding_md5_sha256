@@ -1,0 +1,15 @@
+name: Pull Request Workflow
+
+on:
+    pull_request:
+        types: [closed]
+
+jobs:
+    pull-request-workflow:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Check if PR was merged into main
+              if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+              run: echo "Pull request foi mesclado na branch main!"
