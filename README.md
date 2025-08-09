@@ -1,6 +1,6 @@
 # SHA256&MD5 Codding (Cybersecurity)
 
-## ➡ Linguagem Utilizada
+## ➡ Tecnologias Utilizadas
 
 Python: Linguagem principal utilizada para o desenvolvimento do projeto.
 
